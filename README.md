@@ -22,6 +22,8 @@
 
 ## Overview
 
+
+
 Effective credit assignment is crucial for training LLMs in reasoning tasks. Trajectory-level methods such as GRPO rely solely on sparse final rewards, making credit assignment challenging. Token-level methods like PPO heavily depend on the critic model, whose value estimation is often inaccurate. The SPO framework aims to balance these extremes by operating at the segment granularity, enabling richer feedback signals compared to GRPO and allowing more accurate Monte Carlo estimates of segment-level advantages, thereby bypassing the need for a critic model.
 
 Our framework consists of three components: ***Segment Partition***, ***Segment Advantage Estimation***, and ***Policy Optimization Using Segment Advantages***, each of which can be implemented in various ways.
@@ -156,13 +158,16 @@ We use `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` as base model and finetune it
   <sub>*Compared to GRPO, SPO-tree achieves more efficient training and achieves higher accuracy.*</sub>
 </div>
 
-**Table: Accuracy (%) comparison on MATH500 and AIME datasets**
+<div align="center">
+<b>Table: Accuracy (%) comparison on MATH500 and AIME datasets</b>
 
 | Context Size | Dataset | Base  | GRPO  | SPO-tree  | DeepScaleR | STILL-3 |
 | ------------ | ------- | ----- | ----- | --------- | ---------- | ------- |
 | 2K           | MATH500 | 0.566 | 0.62  | **0.736** | 0.538      | 0.662   |
 | 4K           | MATH500 | 0.740 | 0.752 | **0.828** | 0.744      | 0.794   |
 | 32K          | MATH500 | 0.838 | 0.84  | 0.848     | **0.878**  | 0.846   |
+
+</div>
 
 ## **Acknowledgment**
 
