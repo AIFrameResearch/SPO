@@ -1,6 +1,6 @@
 <div align="center">
 
-# SPO
+# Segment Policy Optimization (SPO)
 
 <div>
 🚀 Segment Policy Optimization: Improved Credit Assignment in Reinforcement Learning for LLMs 🌟
