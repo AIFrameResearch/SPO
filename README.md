@@ -161,13 +161,16 @@ We use `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` as base model and finetune it
 </div>
 
 <div align="center">
-<b>Table: Accuracy (%) comparison on MATH500 and AIME datasets</b>
+<b>Table: Accuracy (%) comparison on MATH500 and AIME24 datasets</b>
 
 | Context Size | Dataset | Base  | GRPO  | SPO-tree  | DeepScaleR | STILL-3 |
 | ------------ | ------- | ----- | ----- | --------- | ---------- | ------- |
 | 2K           | MATH500 | 0.566 | 0.62  | **0.736** | 0.538      | 0.662   |
 | 4K           | MATH500 | 0.740 | 0.752 | **0.828** | 0.744      | 0.794   |
 | 32K          | MATH500 | 0.838 | 0.84  | 0.848     | **0.878**  | 0.846   |
+| 2K           | AIME24 | 0.067 | 0.033  | **0.1** | 0      | 0.067   |
+| 4K           | AIME24 | 0.167 | **0.2** | **0.2** | 0.167      | 0.133   |
+| 32K          | AIME24 | 0.267 | **0.333**  | **0.333**     | **0.333**  | 0.233   |
 
 </div>
 
