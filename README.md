@@ -22,11 +22,13 @@
 
 ## Overview
 
+Effective credit assignment is crucial for training LLMs in reasoning tasks. Trajectory-level methods such as GRPO rely solely on sparse final rewards, making credit assignment challenging. Token-level methods like PPO heavily depend on the critic model, whose value estimation is often inaccurate. The SPO framework aims to balance these extremes by operating at the segment granularity, providing several key advantages:
 
+- **Improved credit assignment:** Segment-level feedback provides more localized information than trajectory-level methods, allowing credit assignment to shorter segments. This finer granularity enables the model to reward partial progress even for ultimately unsuccessful responses and penalize redundancy or unnecessary portions within successful responses. 
+- **More accurate advantage estimation:** Compared to token-level advantages, segment-level advantages involve fewer estimation points. This enables SPO to leverage effective Monte Carlo (MC) sampling, yielding accurate and unbiased advantage estimation directly from the policy, thus eliminating the need for an additional, unstable critic model. 
+- **Flexibility and adaptability:** Our segment partition method can be arbitrarily defined without requiring semantic completeness, offering flexible adjustment of granularity from token-level to trajectory-level, making it adaptable to a wide range of tasks.
 
-Effective credit assignment is crucial for training LLMs in reasoning tasks. Trajectory-level methods such as GRPO rely solely on sparse final rewards, making credit assignment challenging. Token-level methods like PPO heavily depend on the critic model, whose value estimation is often inaccurate. The SPO framework aims to balance these extremes by operating at the segment granularity, enabling richer feedback signals compared to GRPO and allowing more accurate Monte Carlo estimates of segment-level advantages, thereby bypassing the need for a critic model.
-
-Our framework consists of three components: ***Segment Partition***, ***Segment Advantage Estimation***, and ***Policy Optimization Using Segment Advantages***, each of which can be implemented in various ways.
+Our framework consists of three components: ***Segment Partition***, ***Segment Advantage Estimation***, and ***Policy Optimization Using Segment Advantages***. Each component can be implemented in various ways, allowing tailored adaptations for different scenarios.
 
 ![framework_overview](./figures/framework_overview.png)
 
