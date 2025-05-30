@@ -177,3 +177,16 @@ We use `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` as base model and finetune it
 ## **Acknowledgment**
 
 Our code implementation is adapted from the repository provided by VinePPO (https://github.com/McGill-NLP/VinePPO). We sincerely thank the authors for making their code publicly available.
+
+## Citation
+
+```bibtex
+@misc{guo2025segmentpolicyoptimizationeffective,
+      title={Segment Policy Optimization: Effective Segment-Level Credit Assignment in RL for Large Language Models}, 
+      author={Yiran Guo and Lijie Xu and Jie Liu and Dan Ye and Shuang Qiu},
+      year={2025},
+      eprint={2505.23564},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.23564}, 
+}
