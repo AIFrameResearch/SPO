@@ -11,7 +11,7 @@
 
 <div align="center">
 
-<!-- [![Arxiv](https://img.shields.io/badge/arXiv-arXiv%20Preprint-B31B1B?style=flat&logo=arxiv&logoColor=white)](https://github.com/agentica-project/rllm) -->
+[![Arxiv](https://img.shields.io/badge/arXiv-arXiv%20Preprint-B31B1B?style=flat&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.23564)
 [![Website](https://img.shields.io/badge/Homepage-Project%20Page-brightgreen?style=flat&logo=github)](https://github.com/AIFrameResearch/SPO) 
 
 
