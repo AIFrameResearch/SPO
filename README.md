@@ -3,7 +3,7 @@
 # Segment Policy Optimization (SPO)
 
 <div>
-🚀 Segment Policy Optimization: Improved Credit Assignment in Reinforcement Learning for LLMs 🌟
+🚀 Segment Policy Optimization: Effective Segment-Level Credit Assignment in RL for Large Language Models 🌟
 </div>
 </div>
 <div>
