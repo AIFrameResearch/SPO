@@ -19,6 +19,8 @@
 
 </div>
 
+## News
+2025.06.08 | Our work has been [reported by 机器之心](https://mp.weixin.qq.com/s/abUS_x8GTHEqTwS9rCwgLg)👏
 
 ## Overview
 
