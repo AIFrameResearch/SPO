@@ -42,4 +42,4 @@ py-cpuinfo==9.0.0
 sentencepiece==0.2.0
 jsonlines==4.0.0
 pylatexenc==2.10
-lighteval==0.8.1
+lighteval
